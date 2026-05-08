@@ -12,7 +12,16 @@ const CommentIcon = () => (
   </svg>
 );
 
-const ShareIcon = () => (
+const RepeatIcon = () => (
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="17 1 21 5 17 9"/>
+    <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+    <polyline points="7 23 3 19 7 15"/>
+    <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+  </svg>
+);
+
+const SendIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <line x1="22" y1="2" x2="11" y2="13"/>
     <polygon points="22 2 15 22 11 13 2 9 22 2"/>
@@ -146,11 +155,23 @@ export default function Post({ post }) {
 
       {/* Actions */}
       <div className="post-actions">
-        <button className={`post-action-btn${liked ? ' liked' : ''}`} onClick={handleLike} title="Curtir">
-          <HeartIcon filled={liked} />
-        </button>
-        <button className="post-action-btn" title="Comentar"><CommentIcon /></button>
-        <button className="post-action-btn" title="Compartilhar"><ShareIcon /></button>
+        <div className="post-actions-left">
+          <button className={`post-action-btn${liked ? ' liked' : ''}`} onClick={handleLike} title="Curtir">
+            <HeartIcon filled={liked} />
+            <span className="post-action-count">{likes.toLocaleString('pt-BR')}</span>
+          </button>
+          <button className="post-action-btn" title="Comentar" onClick={() => setShowComments(s => !s)}>
+            <CommentIcon />
+            <span className="post-action-count">{comments.length}</span>
+          </button>
+          <button className="post-action-btn" title="Repostar">
+            <RepeatIcon />
+            <span className="post-action-count">{post.reposts || 0}</span>
+          </button>
+          <button className="post-action-btn" title="Enviar">
+            <SendIcon />
+          </button>
+        </div>
         <button
           className={`post-action-btn post-save${saved ? ' saved' : ''}`}
           onClick={() => setSaved(s => !s)} title="Salvar"
@@ -158,9 +179,6 @@ export default function Post({ post }) {
           <BookmarkIcon filled={saved} />
         </button>
       </div>
-
-      {/* Likes */}
-      <div className="post-likes">{likes.toLocaleString('pt-BR')} curtidas</div>
 
       {/* Caption */}
       <div className="post-caption">
