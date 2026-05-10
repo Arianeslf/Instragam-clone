@@ -4,7 +4,7 @@ Clone visual do Instagram desenvolvido com React para fins educacionais e práti
 
 ---
 
-# 🚀 Sobre o Projeto
+#  Sobre o Projeto
 
 O Instagrão é um projeto inspirado na interface do Instagram, criado para praticar:
 
@@ -26,7 +26,7 @@ O projeto reproduz elementos clássicos da plataforma como:
 
 ---
 
-# 🛠️ Tecnologias Utilizadas
+#  Tecnologias Utilizadas
 
 - React
 - Vite
@@ -36,7 +36,7 @@ O projeto reproduz elementos clássicos da plataforma como:
 
 ---
 
-# 🎨 Funcionalidades
+#  Funcionalidades
 
 - Barra lateral fixa
 - Stories com borda gradiente
@@ -97,7 +97,7 @@ A interface original do Instagram pertence à Meta.
 
 ---
 
-# 👩‍💻 Desenvolvedora
+#  Desenvolvedora
 
 **Ariane Silvestre Maira**  
 Estudante de Engenharia de Software  
@@ -105,7 +105,7 @@ Focada em Front-end, UI Design e desenvolvimento web.
 
 ---
 
-# ⭐ Aprendizados
+#  Aprendizados
 
 Durante o desenvolvimento deste projeto foram praticados:
 
@@ -116,8 +116,3 @@ Durante o desenvolvimento deste projeto foram praticados:
 - Organização de projeto
 - Design inspirado em aplicações reais
 
----
-
-# ✅ Status do Projeto
-
-✔️ Projeto finalizado
