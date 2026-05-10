@@ -6,7 +6,7 @@ Clone visual do Instagram desenvolvido com React para fins educacionais e práti
 
 Acesse o projeto online:
 
-(https://instragam-clone.vercel.app/)
+https://instragam-clone.vercel.app/
 
 ---
 
