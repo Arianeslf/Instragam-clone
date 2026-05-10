@@ -2,7 +2,7 @@
 # 📸 Instagrão
 
 <p align="center">
-  <img src="./public/instagrao-preview.gif" alt="Preview do Instagrão" width="100%">
+  <img src="./public/video-insta.gif" alt="Preview do Instagrão" width="100%">
 </p>
 
 Clone visual do Instagram desenvolvido com React para fins educacionais e prática de front-end.
