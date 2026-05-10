@@ -1,9 +1,4 @@
-
 # 📸 Instagrão
-
-<p align="center">
-  <img src="./public/video-insta.gif" alt="Preview do Instagrão" width="100%">
-</p>
 
 Clone visual do Instagram desenvolvido com React para fins educacionais e prática de front-end.
 
@@ -27,7 +22,7 @@ O projeto reproduz elementos clássicos da plataforma como:
 ✔️ Sidebar lateral  
 ✔️ Sugestões de usuários  
 ✔️ Dark Mode  
-✔️ Interface responsiva  
+✔️ Interface responsiva
 
 ---
 
